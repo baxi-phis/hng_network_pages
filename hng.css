@@ -6,17 +6,13 @@
 	padding: 0;
 	font-family: 'Ubuntu', 'Noto Sans JP', sans-serif;
 }
-}
 body {
 	width: 100vw;
-	margin: 0;
-	padding: 0;
 	align-items: center;
-	background-color: #CCCCCC;
 }
 .header {
 	display: flex;
-	height: 100px;
+	height: 6.25em;
 	width: 100vw;
 	color: #DADADA;
 	background: rgb(165, 163, 198);
@@ -24,44 +20,28 @@ body {
 	align-items: center;
 	justify-content: center;
 }
-header {
-	font-size: 50px;
+.header-txt {
+	font-size: 3.125em;
 	text-align: center;
 }
 .container {
-	position: relative;
-	height: 500px;
-	margin-top: 50px;
+	width: clamp(100px,63vw,100vw);
+	margin-left: auto;
+    margin-right: auto;
+    text-align: left;
 }
 .list {
-	width: 1200px;
-	height: 450px;
-	margin: auto;
+	margin-top: 4.5em;
 }
-.server{
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-.offer{
-	position: absolute;
-    top: 150%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
+
 .list a {
-	font-size: 30px;
+	font-size: 2em;
 }
+
 .list ul {
 	height: 30vh;
-	width: 1200px;
-	border-top: solid 5px #5989cf;
-    border-bottom: solid 5px #5989cf;
+	border-top: solid 0.35em #5989cf;
+    border-bottom: solid 0.35em #5989cf;
 	background-color: #F0F0F0;
 	list-style: none;
 	padding-left: 0;
@@ -71,14 +51,14 @@ header {
 	-webkit-overflow-scrolling: touch;
 }
 ul * {
-	border-left: solid 7.5px #ffc06e;
+	border-left: solid 0.4em #ffc06e;
 	background: #fff8e8;
-	margin: 5px;
+	margin: 1em;
 }
 li {
 	white-space: pre-wrap;
-	height: 75px;
-	margin: 10px;
+	height: 4.5em;
+	margin: 0.625em;
 	/* データ完成次第書き換えようかな */
 }
 @media screen and (max-width: 959px) {
@@ -86,9 +66,10 @@ li {
 }
 @media screen and (max-width : 480px) {
 	/* 480px以下に適用されるCSS（スマホ用） */
-	header {
+	/* header {
 		text-align: center;
 		width: 400px;
 		font-size: 40px;
 	}
+	*/
 }
