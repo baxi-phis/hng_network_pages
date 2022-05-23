@@ -25,23 +25,22 @@ body {
 	text-align: center;
 }
 .container {
-	width: clamp(100px,63vw,100vw);
+	width: clamp(300px, 63vw, 100vw);
 	margin-left: auto;
-    margin-right: auto;
-    text-align: left;
+	margin-right: auto;
+	margin-bottom: 10vh;
+	text-align: left;
 }
 .list {
 	margin-top: 4.5em;
 }
-
 .list a {
 	font-size: 2em;
 }
-
 .list ul {
 	height: 30vh;
 	border-top: solid 0.35em #5989cf;
-    border-bottom: solid 0.35em #5989cf;
+	border-bottom: solid 0.35em #5989cf;
 	background-color: #F0F0F0;
 	list-style: none;
 	padding-left: 0;
@@ -56,20 +55,31 @@ ul * {
 	margin: 1em;
 }
 li {
-	white-space: pre-wrap;
+	white-space: pre-wrap; /*改行させるための*/
 	height: 4.5em;
 	margin: 0.625em;
 	/* データ完成次第書き換えようかな */
+}
+.footer {
+	height: 15vh;
+	width: 100vw;
+	text-align: center;
+	color: #CCCCCC;
+	border-top: solid 0.15em;
+	display: table-cell;
+	vertical-align: middle;
+}
+footer a {
+	color: #838383;
+	text-decoration: none;
+	transition: 0.7s ease-in-out;
+}
+footer a:hover{
+	color: cornflowerblue;
 }
 @media screen and (max-width: 959px) {
 	/* 959px以下に適用されるCSS（タブレット用） */
 }
 @media screen and (max-width : 480px) {
 	/* 480px以下に適用されるCSS（スマホ用） */
-	/* header {
-		text-align: center;
-		width: 400px;
-		font-size: 40px;
-	}
-	*/
 }
